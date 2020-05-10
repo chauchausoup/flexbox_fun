@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clickable Gallery</title>
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="box">
+
+        <div class="p"></div>
+        <div class="pa"></div>
+        <div class="pa"></div>
+        <div class="p"></div>
+
+        
+        
+
+      </div>
+    </div>
+
+
+    <script>
+
+      var panel= (document.querySelectorAll('.pa'));
+
+
+
+      
+     
+function growFunction(){
+  this.classList.add('open1');
+
+
+  if (this.previousElementSibling.classList.contains('open1') || this.nextElementSibling.classList.contains('open1')){
+            
+            this.previousElementSibling.classList.remove('open1') || this.nextElementSibling.classList.remove('open1');
+
+        this.classList.add('open1');
+        }
+}
+    
+
+    
+
+       panel.forEach(p=>{
+        p.addEventListener('click',growFunction);
+      })
+ 
+    
+
+
+    </script>
+
+  </body>
+</html>

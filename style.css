@@ -1,0 +1,32 @@
+.container{
+  min-height: 100vh;
+  background-color: lightgrey;
+  display: grid;
+  align-items: center;
+  
+ 
+  
+  
+}
+
+.box{
+  border: 2px solid black;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+
+    
+  
+}
+.pa{
+  background-color: skyblue;
+  border: 2px solid yellow;
+  min-width: 20%;
+  
+  
+}
+.pa.open1{
+  flex:5;
+  background-color: pink;
+}
+
